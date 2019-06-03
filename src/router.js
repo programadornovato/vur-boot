@@ -30,5 +30,11 @@ export default new Router({
       name: 'card',
       component: () => import(/* webpackChunkName: "about" */ './views/Card.vue')
     }
+    ,
+    {
+      path: '/form',
+      name: 'form',
+      component: () => import(/* webpackChunkName: "about" */ './views/Form.vue')
+    }
   ]
 })
