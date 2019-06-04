@@ -1,11 +1,9 @@
 <template>
     <div>
-        <h1>Fromulario</h1>
+        <h1>Select</h1>
         <form>
             <b-row>
                 <b-col cols="12">
-                    <b-form-input type="text" v-model="texto" :state="valida" ></b-form-input>
-                    {{texto}}
                 </b-col>
             </b-row>
         </form>
@@ -14,16 +12,12 @@
 
 <script>
 export default {
-    name:'form',
+    name:'select',
     data(){
         return{
-            texto:''
         }
     },
     computed:{
-        valida(){
-            return this.texto.length > 5 ? true : false
-        }
     }
 }
 </script>
